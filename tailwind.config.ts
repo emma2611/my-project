@@ -41,6 +41,7 @@ function addVariablesForColors({ addBase, theme }: PluginAPI) {
       },
       animation: {
         spotlight : "spotlight 2s ease .75s 1 forwards",
+        "meteor-effect": "meteor 5s linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -52,11 +53,14 @@ function addVariablesForColors({ addBase, theme }: PluginAPI) {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
           },
-         // movingBorder: {
-           // '0%': { border: '2px solid transparent', 'border-color': 'transparent' },
-            //'50%': { border: '2px solid var(--foreground)', 'border-color': 'var(--foreground)' },
-            //'100%': { border: '2px solid transparent', 'border-color': 'transparent' },
-          //},
+          meteor: {
+            "0%": `{ transform: "rotate(215deg) translateX(0)", opacity: "1" }`,
+            "70%": `{ opacity: "1" }`,
+            "100%":`{ 
+            transform : "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+            }`,
+          },
   
   
         },

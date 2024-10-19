@@ -4,6 +4,7 @@ import { Menu, MenuItem, } from "./ui/Navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+
 function Navbar({ className }: { className?: string }) {
 const [active, setActive] = useState<string | null>(null)
     return (
@@ -13,7 +14,7 @@ const [active, setActive] = useState<string | null>(null)
          <Link href="/"onClick={() => setActive("Home")}>Home</Link>
          </MenuItem>
          <MenuItem setActive={setActive} active={active} item="our courses">
-         <Link href="/courses"onClick={() => setActive("Our courses")}>Our courses</Link>
+         <Link href="/our courses"onClick={() => setActive("our courses")}>our courses</Link>
          </MenuItem>
          <MenuItem setActive={setActive} active={active} item="Contact">
          <Link href="/contact"onClick={() => setActive("Contact")}>Contact</Link>
