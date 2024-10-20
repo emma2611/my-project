@@ -9,7 +9,7 @@ import courseData from "@/data/code_courses.json";
 const CoursesPage = () => {
     return (
         <div className="min-h-screen bg-black py-12 pt-36">
-            <h1 className="text-lgnext build md:text-7x1 text-center font-bold mb-8 text-white">
+            <h1 className="text-lg next build md:text-7x1 text-center font-bold mb-8 text-white">
                 All courses ({courseData.courses.length})
             </h1>
             <div className="flex flex-wrap justify-center">

@@ -8,7 +8,7 @@
         "price" : 99.55,
         "instuctor": "mali",
         "isFeatured": true,
-        "images": "code.png"
+        "images": "/courses/game.png"
         },
         {
             "id" : 1,
@@ -18,7 +18,7 @@
             "price" : 99.55,
             "instuctor": "mali",
             "isFeatured": false,
-            "images": "code.png"
+            "images": "/courses/game.png"
             },
             {
                 "id" : 1,
@@ -28,7 +28,7 @@
                 "price" : 99.55,
                 "instuctor": "mali",
                 "isFeatured": true,
-                "images": "code.png"
+                "images": "/courses/game.png"
                 },
                 {
                     "id" : 1,
@@ -38,7 +38,7 @@
                     "price" : 99.55,
                     "instuctor": "mali",
                     "isFeatured": false,
-                    "images": "code.png"
+                    "images": "/courses/game.png"
                     },
                     {
                         "id" : 1,
@@ -48,7 +48,7 @@
                         "price" : 99.55,
                         "instuctor": "mali",
                         "isFeatured": true,
-                        "images": "code.png"
+                        "images": "/courses/game.png"
                         },
                         {
                             "id" : 1,
@@ -58,7 +58,7 @@
                             "price" : 99.55,
                             "instuctor": "mali",
                             "isFeatured": false,
-                            "images": "code.png"
+                            "images": "/courses/game.png"
                             }
         ]
 }

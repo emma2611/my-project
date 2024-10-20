@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { Meteors } from '@/components/ui/meteors';
+
 const ContactPage = () => {
   return (
     <div className='min-h-screen bg-[#0a0e27] py-12 pt-36 relative overflow-hidden flex justify center items-ccenter'>
