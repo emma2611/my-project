@@ -4,7 +4,7 @@ import { Meteors } from '@/components/ui/meteors';
 
 const ContactPage = () => {
   return (
-    <div className='min-h-screen bg-[#0a0e27] py-12 pt-36 relative overflow-hidden flex justify center items-ccenter'>
+    <div className='min-h-screen bg-[#0a0e27] py-12 pt-36 relative overflow-hidden flex justify center items-center'>
       <Meteors number={30} className='opacity-70' />
       <div className='flex bg-[#111827] bg-opacity -60 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg overflow-hidden'>
         <div className='p-8 transform transition-transform hover:scale-105'>

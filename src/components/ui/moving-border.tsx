@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, {ReactNode, ButtonHTMLAttributes } from "react";
+
 import {
   motion,
   useAnimationFrame,
@@ -27,8 +28,8 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
- [key: string]: any;
-}) {
+}& ButtonHTMLAttributes<HTMLButtonElement>)
+ {
   return (
     <Component
       className={cn(
@@ -80,9 +81,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
-}) => {
-  const pathRef = useRef<any>();
+} & React.SVGProps<SVGSVGElement>) =>  // Used SVGProps for otherProps 
+  {
+  const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
