@@ -1,6 +1,14 @@
 "use client";
-import React, {ReactNode, ButtonHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes } from "react";
+import { ReactNode } from "react";
 
+interface Props {
+  children?: ReactNode;
+}
+
+function Component({ children }: Props) {
+  return children;
+}
 import {
   motion,
   useAnimationFrame,
